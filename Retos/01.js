@@ -1,4 +1,4 @@
-let texto = prompt("ingresa un de texto").toLowerCase()
+let texto = prompt("Hola, ingresa una oración:").toLowerCase()
 let contadorA = 0;
 let contadorE = 0;
 let contadorI = 0;

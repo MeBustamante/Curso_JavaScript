@@ -13,7 +13,7 @@ const empleado1 = {
         jueves: "diurno",
         viernes: "diurno",
         sabado: "ninguno",
-        domingo: "ninguno"
+        domingo: "ninguno" 
     },
     pagoDiario: function(dia) {
         // pago diario dependiendo del turno

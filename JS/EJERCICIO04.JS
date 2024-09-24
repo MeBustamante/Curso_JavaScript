@@ -8,7 +8,7 @@ const empleado1 = {
     nombre: "Empleado 1",
     turnos: {
         lunes: "nocturno",
-        martes: "nocturno",
+        martes: "nocturno", 
         miercoles: "nocturno",
         jueves: "diurno",
         viernes: "diurno",

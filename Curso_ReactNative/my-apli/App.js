@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient'; // importa
 export default function App() {
   return (
     <LinearGradient 
-      colors={['#833ab4', '#fd1d1d', '#fcb045']} // colores del gradiente que se sacan de google
+      colors={['#e7ad5c', '#70ee76', '#9056b8']} // colores del gradiente que se sacan de google
       style={styles.container} // aplica el estilo container para el tamaño
     >
       {/* Imagen local (Logo) */}

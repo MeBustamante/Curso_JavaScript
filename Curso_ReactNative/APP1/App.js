@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 20, // Tamaño del texto
-    fontWeight: '600', // Semi-negrita (600)
-    color: 'green', // Color verde
+    fontSize: 20, // tamaño del texto
+    fontWeight: '600', // semi negrita
+    color: 'black', // color negro
   },
 });

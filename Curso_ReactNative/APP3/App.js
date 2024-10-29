@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <LinearGradient 
-      colors={['#e7ad5c', '#70ee76', '#9056b8']} // colores del gradiente
+      colors={['#e7ad5c', '#70ee76', '#9056b8']} // colores del gradiente se saca de la web
       style={styles.container} // aplica el estilo container para el tamaño
     >
       {/* Imagen local (Logo) */}

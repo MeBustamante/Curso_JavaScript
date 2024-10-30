@@ -13,24 +13,22 @@ export default function App() {
       colors={['#e7ad5c', '#70ee76', '#9056b8']} // colores del gradiente se saca de la web
       style={styles.container} // aplica el estilo container para el tamaño
     >
-      {/* Imagen local (Logo) */}
-      <Image 
+    
+      <Image //logo
         source={require('./assets/LOGO ORIGINAL TRANSPARENCIA.png')} 
         style={styles.logo} 
         resizeMode="contain" 
       />
 
-      {/* Texto debajo de la imagen local */}
       <Text style={styles.text}>Departamento de Medio Ambiente.</Text>
 
-      {/* Botón usando el componente Button */}
+
       <Button 
-        title="Botón con Button" 
+        title="Botón con Button" //boton usando button
         onPress={showAlert} 
       />
 
-      {/* Botón usando TouchableHighlight */}
-      <TouchableHighlight 
+      <TouchableHighlight //boton usando touch
         style={styles.touchableButton}
         onPress={showAlert}
         underlayColor="#7BC043"
@@ -38,8 +36,8 @@ export default function App() {
         <Text style={styles.buttonText}>Botón con TouchableHighlight</Text>
       </TouchableHighlight>
 
-      {/* Botón usando Pressable */}
-      <Pressable 
+
+      <Pressable //boton usando pressable
         style={({ pressed }) => [
           {
             backgroundColor: pressed ? '#3D9970' : '#FF851B'

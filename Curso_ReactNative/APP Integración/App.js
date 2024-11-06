@@ -11,7 +11,7 @@ const Stack = createNativeStackNavigator();
 
 function MainScreen({ navigation }) {
   const [name, setName] = useState('');
-  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
+  const [isButtonEnabled, setIsButtonEnabled] = useState(false); //boton
 
   const handleNameChange = (text) => {
     setName(text);

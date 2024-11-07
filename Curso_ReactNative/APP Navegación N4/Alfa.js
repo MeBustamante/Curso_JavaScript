@@ -1,26 +1,26 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-// componente para la pantalla Alfa
+// Componente para la pantalla Alfa
 const Alfa = ({ route }) => {
-  const { type } = route.params; // obtengo el tipo de la navegación
+  const { type } = route.params || {}; 
   
-  // defino el mensaje según el tipo
-  let message;
+  // Defino el mensaje según el tipo
+  let message = 'Tipo de navegación no válido'; // Mensaje predeterminado
   if (type === 'home') {
     message = 'Bienvenidos al Home';
   } else if (type === 'settings') {
-    message = 'Bienvenidos a la Configuracion';
+    message = 'Bienvenidos a la Configuración';
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.message}>{message}</Text> {/* muestro el mensaje */}
+      <Text style={styles.message}>{message}</Text>
     </View>
   );
 };
 
-// estilos para el componente Alfa
+// Estilos para el componente Alfa
 const styles = StyleSheet.create({
   container: {
     flex: 1,

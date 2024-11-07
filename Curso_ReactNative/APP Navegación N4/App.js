@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { LinearGradient } from 'expo-linear-gradient'; 
@@ -15,17 +15,14 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.buttonContainer}>
         {/* botón para navegar a la pantalla de home */}
         <Pressable onPress={() => navigation.navigate('Alfa', { type: 'home' })} style={styles.button}>
-          <View style={styles.buttonContent}>
-            <Text style={styles.icon}>🏠</Text>
-            <Text style={styles.buttonText}>Home</Text>
-          </View>
+          <Image source={require('./assets/home.png')} style={styles.icon} />
+          <Text style={styles.buttonText}>HOME</Text>
         </Pressable>
+        
         {/* botón para navegar a la pantalla de configuraciones */}
         <Pressable onPress={() => navigation.navigate('Alfa', { type: 'settings' })} style={styles.button}>
-          <View style={styles.buttonContent}>
-            <Text style={styles.icon}>⚙️</Text>
-            <Text style={styles.buttonText}>Settings</Text>
-          </View>
+          <Image source={require('./assets/config.png')} style={styles.icon} />
+          <Text style={styles.buttonText}>SETTINGS</Text>
         </Pressable>
       </View>
     </LinearGradient>
@@ -62,21 +59,20 @@ const styles = StyleSheet.create({
     width: '60%',
   },
   button: {
-    backgroundColor: '#000',
     padding: 10,
+    alignItems: 'center',
     borderRadius: 5,
     marginHorizontal: 10,
-    alignItems: 'center',
-  },
-  buttonContent: {
-    alignItems: 'center',
   },
   icon: {
-    fontSize: 24,
+    width: 50,  // Ajusta el tamaño de la imagen según sea necesario
+    height: 50,
+    marginBottom: 5,
   },
   buttonText: {
     color: '#fff',
     fontSize: 16,
+    textAlign: 'center',
   },
 });
 
